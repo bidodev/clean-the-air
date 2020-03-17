@@ -189,8 +189,130 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  .header,
-  .content-view {
+  .content-view,
+  .header {
+    //border: 5px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__logo {
+    //border: 1px solid yellowgreen;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-img {
+      width: 50vw;
+      height: auto;
+    }
+  }
+
+  .header__nav {
     display: none;
+  }
+
+  .imgs-wrapper {
+    margin: 0 auto;
+    //border: 1px solid red;
+    height: 60vh;
+    width: 50%;
+    position: relative;
+
+    &__img-1 {
+      position: absolute;
+      top: 1em;
+      left: 8em;
+      //border: black 1px solid;
+      z-index: 1;
+      max-height: 59.2rem;
+      max-width: 28.8rem;
+      width: 100%;
+      height: auto;
+    }
+
+    &__img-2 {
+      position: absolute;
+      top: 0;
+      right: 26em;
+      z-index: auto;
+      max-height: 59.2rem;
+      max-width: 28.8rem;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .content-view {
+    margin: 0 auto;
+    min-height: 65vh;
+    max-width: 60vw;
+    //border: 5px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-wrapper {
+    //border: 1px solid red;
+    height: 100;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+
+    &__header {
+      font-size: 6em;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    &__sub-header {
+      line-height: 1.5;
+      font-size: 3em;
+      font-weight: 500;
+    }
+  }
+
+  .buttons-wrapper {
+    //border: 2px dashed red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2rem;
+
+    &__btn-learn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10vw;
+      height: 5rem;
+      color: white;
+      background-color: #4bbf58;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &__btn-get {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10vw;
+      height: 5rem;
+      color: white;
+      background-color: #3397db;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 }

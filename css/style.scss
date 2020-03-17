@@ -1,13 +1,3 @@
-// * > :nth-child(odd) {
-//   border: 5px dashed pink;
-// }
-
-// * > :nth-child(even) {
-//   border: 5px dashed red;
-// }
-
-///////////////////////////////////////////////
-/////////////BASE
 *,
 *::after,
 *::before {
@@ -16,31 +6,28 @@
   box-sizing: inherit;
 }
 
+:root {
+  --primary-color: rgba(13, 110, 139, 0.4);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+}
+
 html {
   //this define how much 1rem is.
-  font-size: 62.5%;
+  font-size: 0.5vw;
   scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
-}
-
-////////////////////////////////////////////////////
-///////////////////
-body {
-  background-image: url(../img/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 1.6rem;
+  background: url("../img/bg.jpg") no-repeat center fixed;
+  background-size: auto;
   font-family: Roboto, sans-serif;
-  height: auto;
 }
 
 .wrapper {
-  //border: 1px solid black;
-  //background-color: teal;
-  min-height: 100vh;
+  //border: 1px solid red;
+  min-height: 90vh;
+  height: auto;
 }
 
 .header {
@@ -51,23 +38,24 @@ body {
   justify-content: center;
 
   &__logo {
-    //border: 3px solid yellowgreen;
-    height: 20rem;
-    width: 25vw;
+    //border: 1px solid yellowgreen;
+    min-height: 17vh;
+    width: 30vw;
     display: flex;
     align-items: center;
 
     &-img {
-      width: 27.84rem;
-      height: 10.95rem;
+      width: 50%;
+      height: auto;
     }
   }
 
   &__nav {
-    padding-left: 5rem;
-    //border: 3px solid yellowgreen;
-    height: 20rem;
-    width: 40vw;
+    padding-left: 1vw;
+    font-size: 0.5vw;
+    // border: 1px solid yellowgreen;
+    min-height: 17vh;
+    width: 30vw;
     display: flex;
     align-items: center;
 
@@ -79,16 +67,16 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 1.5rem;
     }
     &-item {
       //border: 1px solid white;
+      font-size: 1.5rem;
       height: 2rem;
       width: auto;
       list-style: none;
       text-transform: uppercase;
       color: white;
-      font-weight: 600;
+      font-weight: 500;
       &:hover {
         opacity: 0.8;
       }
@@ -96,29 +84,26 @@ body {
   }
 }
 
+/* container for the text and phones imgs*/
 .content-view {
-  min-height: 80vh;
+  margin: 0 auto;
+  min-height: 65vh;
+  max-width: 70vw;
   //border: 5px solid green;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-
-// //DEBUGGER
-// .text-wrapper > div {
-//   border: 1px dashed black;
-// }
 
 .imgs-wrapper {
   //border: 1px solid red;
-  height: 75vh;
-  width: 40vw;
+  height: 60vh;
+  width: 45vw;
   position: relative;
 
   &__img-1 {
     position: absolute;
-    top: 3%;
-    left: 13%;
+    top: 1em;
+    left: 8em;
     //border: black 1px solid;
     z-index: 1;
     max-height: 59.2rem;
@@ -130,7 +115,7 @@ body {
   &__img-2 {
     position: absolute;
     top: 0;
-    right: 32%;
+    right: 26em;
     z-index: auto;
     max-height: 59.2rem;
     max-width: 28.8rem;
@@ -141,8 +126,10 @@ body {
 
 .text-wrapper {
   //border: 1px solid red;
-  height: 50vh;
-  width: 25vw;
+  padding: 5vw 0;
+  padding-left: 5vw;
+  height: 60vh;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -150,14 +137,14 @@ body {
 
   &__header {
     font-size: 4rem;
-    font-weight: 600;
-    line-height: 1.6;
+    font-weight: 500;
+    line-height: 1.4;
   }
 
   &__sub-header {
     line-height: 1.5;
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
@@ -165,17 +152,19 @@ body {
   //border: 2px dashed red;
   display: flex;
   justify-content: space-around;
-  width: 70%;
+  align-items: center;
+  width: 80%;
   font-weight: 600;
+  font-size: 1.6rem;
 
   &__btn-learn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
+    width: 10vw;
     height: 5rem;
     color: white;
-    background-color: green;
+    background-color: #4bbf58;
     border-radius: 5px;
     cursor: pointer;
     &:hover {
@@ -187,14 +176,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
+    width: 10vw;
     height: 5rem;
     color: white;
-    background-color: teal;
+    background-color: #3397db;
     border-radius: 5px;
     cursor: pointer;
     &:hover {
       opacity: 0.8;
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 0.6vw;
+  }
+  .header,
+  .content-view {
+    display: none;
   }
 }

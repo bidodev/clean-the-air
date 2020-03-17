@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-color: rgba(13, 110, 139, 0.4);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+}
+
+html {
+  //this define how much 1rem is.
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  background: url("../img/bg.jpg") no-repeat center fixed;
+  background-size: cover;
+  font-family: Roboto, sans-serif;
+}

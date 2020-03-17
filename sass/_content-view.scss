@@ -1,0 +1,107 @@
+/* container for the text and phones imgs*/
+.content-view {
+  margin: 0 auto;
+  min-height: 65vh;
+  min-width: 70vw;
+  //border: 5px solid green;
+  display: flex;
+  justify-content: center;
+}
+
+.imgs-wrapper {
+  font-size: 0.5vw;
+  //border: 1px solid red;
+  height: auto;
+  width: 25vw;
+  position: relative;
+
+  &__img-1 {
+    position: absolute;
+    top: 1em;
+    left: 3vw;
+    //border: black 1px solid;
+    z-index: 1;
+    max-height: 59.2vh;
+    max-width: 14.8vw;
+    width: auto;
+    height: auto;
+  }
+
+  &__img-2 {
+    position: absolute;
+    top: 0;
+    right: 0em;
+    z-index: auto;
+    max-height: 59.2vh;
+    max-width: 14.8vw;
+    width: auto;
+    height: auto;
+  }
+}
+
+.text-wrapper {
+  // border: 1px solid red;
+  padding: 3vw 0;
+  height: 50vh;
+  width: 23vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+
+  &__header {
+    // border: 1px solid brown;
+    width: 22vw;
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  &__sub-header {
+    width: 22vw;
+    height: auto;
+    //border: 1px solid brown;
+    line-height: 1.5;
+    font-size: 0.75vw;
+    font-weight: 500;
+  }
+}
+
+.buttons-wrapper {
+  width: 19vw;
+  //border: 1px solid brown;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1vw;
+
+  &__btn-learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9vw;
+    height: 5vh;
+    color: white;
+    background-color: #4bbf58;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__btn-get {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9vw;
+    height: 5vh;
+    color: white;
+    background-color: #3397db;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

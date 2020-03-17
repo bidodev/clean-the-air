@@ -1,0 +1,58 @@
+.header {
+  //border: 2px solid black;
+  min-width: 70vw;
+  min-height: 20vh;
+  height: auto;
+  display: flex;
+  align-items: center; //align-items in the cross axis
+  justify-content: center;
+
+  &__logo {
+    //border: 1px solid yellowgreen;
+    height: auto;
+    width: 23vw;
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 10vw;
+      height: auto;
+    }
+  }
+
+  &__nav {
+    padding-left: 1vw;
+    //border: 5px solid yellowgreen;
+    height: auto;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-list {
+      cursor: pointer;
+      //border: 1px solid red;
+      width: 25vw;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8vw;
+      //border: 1px solid white;
+      height: 2rem;
+      width: auto;
+      list-style: none;
+      text-transform: uppercase;
+      color: white;
+      font-weight: 500;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

@@ -28,10 +28,22 @@ body {
 .wrapper {
   min-height: 100vh;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header {
+  min-width: 70vw;
   min-height: 20vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,8 +56,8 @@ body {
 }
 
 .header__logo {
-  min-height: 17vh;
-  width: 30vw;
+  height: auto;
+  width: 23vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,21 +67,23 @@ body {
 }
 
 .header__logo-img {
-  width: 13vw;
+  width: 10vw;
   height: auto;
 }
 
 .header__nav {
   padding-left: 1vw;
-  font-size: 0.5vw;
-  min-height: 17vh;
-  width: 30vw;
+  height: auto;
+  width: 25vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__nav-list {
@@ -88,7 +102,16 @@ body {
 }
 
 .header__nav-item {
-  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8vw;
   height: 2rem;
   width: auto;
   list-style: none;
@@ -105,7 +128,7 @@ body {
 .content-view {
   margin: 0 auto;
   min-height: 65vh;
-  max-width: 70vw;
+  min-width: 70vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,15 +139,15 @@ body {
 
 .imgs-wrapper {
   font-size: 0.5vw;
-  height: 60vh;
-  width: 45vw;
+  height: auto;
+  width: 25vw;
   position: relative;
 }
 
 .imgs-wrapper__img-1 {
   position: absolute;
   top: 1em;
-  left: 8em;
+  left: 3vw;
   z-index: 1;
   max-height: 59.2vh;
   max-width: 14.8vw;
@@ -135,7 +158,7 @@ body {
 .imgs-wrapper__img-2 {
   position: absolute;
   top: 0;
-  right: 22.6em;
+  right: 0em;
   z-index: auto;
   max-height: 59.2vh;
   max-width: 14.8vw;
@@ -144,11 +167,9 @@ body {
 }
 
 .text-wrapper {
-  font-size: 62.5%;
-  padding: 5vw 0;
-  padding-left: 5vw;
-  height: auto;
-  width: 39vw;
+  padding: 3vw 0;
+  height: 50vh;
+  width: 23vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,29 +183,30 @@ body {
 }
 
 .text-wrapper__header {
-  font-size: 4rem;
+  width: 22vw;
+  font-size: 2vw;
   font-weight: 500;
   line-height: 1.4;
 }
 
 .text-wrapper__sub-header {
+  width: 22vw;
+  height: auto;
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 0.75vw;
   font-weight: 500;
 }
 
 .buttons-wrapper {
+  width: 19vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1vw;
 }
 
 .buttons-wrapper__btn-learn {
@@ -197,11 +219,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 10vw;
-  height: 5rem;
+  width: 9vw;
+  height: 5vh;
   color: white;
   background-color: #4bbf58;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -219,11 +241,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 10vw;
-  height: 5rem;
+  width: 9vw;
+  height: 5vh;
   color: white;
   background-color: #3397db;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -231,12 +253,11 @@ body {
   opacity: 0.8;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   .content-view {
     display: none;
   }
   .header {
-    border: 5px solid black;
     min-height: 20vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -253,7 +274,6 @@ body {
             flex-direction: column;
   }
   .header__logo {
-    border: 1px solid yellowgreen;
     min-height: 17vh;
     width: 30vw;
     display: -webkit-box;
@@ -313,4 +333,4 @@ body {
     opacity: 0.8;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

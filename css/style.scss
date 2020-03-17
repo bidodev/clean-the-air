@@ -13,14 +13,14 @@
 
 html {
   //this define how much 1rem is.
-  font-size: 0.5vw;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
   background: url("../img/bg.jpg") no-repeat center fixed;
-  background-size: auto;
+  background-size: cover;
   font-family: Roboto, sans-serif;
 }
 
@@ -95,6 +95,7 @@ body {
 }
 
 .imgs-wrapper {
+  font-size: 0.5vw;
   //border: 1px solid red;
   height: 60vh;
   width: 45vw;
@@ -106,29 +107,30 @@ body {
     left: 8em;
     //border: black 1px solid;
     z-index: 1;
-    max-height: 59.2rem;
-    max-width: 28.8rem;
-    width: 100%;
+    max-height: 59.2vh;
+    max-width: 14.8vw;
+    width: auto;
     height: auto;
   }
 
   &__img-2 {
     position: absolute;
     top: 0;
-    right: 26em;
+    right: 22.6em;
     z-index: auto;
-    max-height: 59.2rem;
-    max-width: 28.8rem;
-    width: 100%;
+    max-height: 59.2vh;
+    max-width: 14.8vw;
+    width: auto;
     height: auto;
   }
 }
 
 .text-wrapper {
   //border: 1px solid red;
+  font-size: 62.5%;
   padding: 5vw 0;
   padding-left: 5vw;
-  height: 60vh;
+  height: auto;
   width: 39vw;
   display: flex;
   flex-direction: column;
@@ -188,130 +190,64 @@ body {
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .content-view,
-  .header {
-    //border: 5px solid green;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .header__logo {
-    //border: 1px solid yellowgreen;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &-img {
-      width: 50vw;
-      height: auto;
-    }
-  }
-
-  .header__nav {
+@media only screen and (max-width: 1300px) {
+  .content-view {
     display: none;
   }
 
-  .imgs-wrapper {
-    margin: 0 auto;
-    //border: 1px solid red;
-    height: 60vh;
-    width: 50%;
-    position: relative;
-
-    &__img-1 {
-      position: absolute;
-      top: 1em;
-      left: 8em;
-      //border: black 1px solid;
-      z-index: 1;
-      max-height: 59.2rem;
-      max-width: 28.8rem;
-      width: 100%;
-      height: auto;
-    }
-
-    &__img-2 {
-      position: absolute;
-      top: 0;
-      right: 26em;
-      z-index: auto;
-      max-height: 59.2rem;
-      max-width: 28.8rem;
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .content-view {
-    margin: 0 auto;
-    min-height: 65vh;
-    max-width: 60vw;
-    //border: 5px solid green;
+  .header {
+    border: 5px solid black;
+    min-height: 20vh;
     display: flex;
+    align-items: center; //align-items in the cross axis
     justify-content: center;
-    align-items: center;
-  }
-
-  .text-wrapper {
-    //border: 1px solid red;
-    height: 100;
-    width: 40vw;
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    color: white;
 
-    &__header {
-      font-size: 6em;
-      font-weight: 500;
-      line-height: 1.4;
-    }
-
-    &__sub-header {
-      line-height: 1.5;
-      font-size: 3em;
-      font-weight: 500;
-    }
-  }
-
-  .buttons-wrapper {
-    //border: 2px dashed red;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: 600;
-    font-size: 2rem;
-
-    &__btn-learn {
+    &__logo {
+      border: 1px solid yellowgreen;
+      min-height: 17vh;
+      width: 30vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 10vw;
-      height: 5rem;
-      color: white;
-      background-color: #4bbf58;
-      border-radius: 5px;
-      cursor: pointer;
-      &:hover {
-        opacity: 0.8;
+
+      &-img {
+        width: 13vw;
+        height: auto;
       }
     }
 
-    &__btn-get {
+    &__nav {
+      padding-left: 1vw;
+      font-size: 0.5vw;
+      border: 1px solid yellowgreen;
+      min-height: 17vh;
+      width: 30vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 10vw;
-      height: 5rem;
-      color: white;
-      background-color: #3397db;
-      border-radius: 5px;
-      cursor: pointer;
-      &:hover {
-        opacity: 0.8;
+
+      &-list {
+        cursor: pointer;
+        //border: 1px solid red;
+        width: 25vw;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &-item {
+        //border: 1px solid white;
+        font-size: 2rem;
+        height: 2rem;
+        width: auto;
+        list-style: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 500;
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
   }

@@ -23,6 +23,7 @@ body {
   background-repeat: no-repeat;
   font-size: 1.6rem;
   font-family: Roboto, sans-serif;
+  height: auto;
 }
 
 .wrapper {
@@ -120,20 +121,24 @@ body {
 
 .imgs-wrapper__img-1 {
   position: absolute;
-  top: 1rem;
-  left: 10rem;
+  top: 3%;
+  left: 13%;
   z-index: 1;
-  height: 59.2rem;
-  width: 28.8rem;
+  max-height: 59.2rem;
+  max-width: 28.8rem;
+  width: 100%;
+  height: auto;
 }
 
 .imgs-wrapper__img-2 {
   position: absolute;
-  top: 0rem;
-  right: 24.3rem;
+  top: 0;
+  right: 32%;
   z-index: auto;
-  height: 59.2rem;
-  width: 28.8rem;
+  max-height: 59.2rem;
+  max-width: 28.8rem;
+  width: 100%;
+  height: auto;
 }
 
 .text-wrapper {

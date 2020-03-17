@@ -1,0 +1,219 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/bg_001.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.6rem;
+  font-family: Robot, sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.header {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__logo {
+  height: 20rem;
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo-img {
+  width: 27.84rem;
+  height: 10.95rem;
+}
+
+.header__nav {
+  padding-left: 5rem;
+  height: 20rem;
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav-list {
+  cursor: pointer;
+  width: 25vw;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.header__nav-item {
+  height: 2rem;
+  width: auto;
+  list-style: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+.header__nav-item:hover {
+  opacity: 0.8;
+}
+
+.content-view {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgs-wrapper {
+  height: 75vh;
+  width: 40vw;
+  position: relative;
+}
+
+.imgs-wrapper__img-1 {
+  position: absolute;
+  top: 1rem;
+  left: 10rem;
+  z-index: 1;
+  height: 59.2rem;
+  width: 28.8rem;
+}
+
+.imgs-wrapper__img-2 {
+  position: absolute;
+  top: 0rem;
+  right: 24.3rem;
+  z-index: auto;
+  height: 59.2rem;
+  width: 28.8rem;
+}
+
+.text-wrapper {
+  height: 50vh;
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+.text-wrapper__header {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.text-wrapper__sub-header {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+  font-weight: 600;
+}
+
+.buttons-wrapper__btn-learn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons-wrapper__btn-learn:hover {
+  opacity: 0.8;
+}
+
+.buttons-wrapper__btn-get {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  background-color: teal;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons-wrapper__btn-get:hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=style.css.map */

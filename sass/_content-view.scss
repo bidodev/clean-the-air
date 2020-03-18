@@ -3,6 +3,7 @@
   //border: 5px solid green;
   margin: 0 auto;
   min-height: 65vh;
+  height: auto;
   min-width: 70vw;
   display: flex;
   justify-content: center;
@@ -11,15 +12,14 @@
 .imgs-wrapper {
   //border: 1px solid red;
   position: relative;
-  font-size: 0.5vw;
   width: 25vw;
   height: auto;
 
   &__img-1 {
     //border: black 1px solid;
     position: absolute;
-    top: 1em;
-    left: 3.2vw;
+    top: 1vh;
+    left: 3vh;
     z-index: 1;
     max-height: 59.2vh;
     max-width: 14.8vw;
@@ -30,7 +30,7 @@
   &__img-2 {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 3vh;
     z-index: auto;
     max-height: 59.2vh;
     max-width: 14.8vw;

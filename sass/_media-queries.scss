@@ -1,17 +1,113 @@
 @media only screen and (max-width: 1300px) {
+  .header {
+  }
   .content-view {
-    display: none;
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .content-view,
-  .header__nav {
-    display: none;
+//phones
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    //border: 2px solid black;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
   }
 
-  .header__hamburger {
-    display: flex;
-    color: white;
+  .header {
+    //border: 1px solid yellowgreen;
+    min-height: 15vh;
+    &__logo {
+      //border: 1px solid yellowgreen;
+
+      &-img {
+        //border: 1px solid red;
+        width: 50vw;
+        height: auto;
+      }
+    }
+
+    &__nav {
+      /* hide the horizontal navigation for mobiles */
+      display: none;
+    }
+
+    &__hamburger {
+      /* display hamburger menu for mobiles */
+      display: block;
+    }
+  }
+
+  .content-view {
+    //border: 3px solid pink;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column-reverse; //in the screen mode we have row on the content-view
+  }
+
+  .imgs-wrapper {
+    //border: 2px solid black;
+    min-height: 45vh;
+    width: 65vw;
+
+    &__img-1 {
+      //border: black 1px solid;
+      max-height: 140.21vh;
+      max-width: 35.52vw;
+      top: 2vh;
+    }
+
+    &__img-2 {
+      max-height: 140.21vh;
+      max-width: 35.52vw;
+      top: 1vh;
+    }
+  }
+
+  .text-wrapper {
+    width: 70vw;
+    min-height: 39vh;
+    //border: 2px solid red;
+    align-items: center;
+    justify-content: space-between;
+
+    &__header {
+      //border: 1px solid brown;
+      width: 65vw;
+      font-size: 6vw;
+      font-weight: 500;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    &__sub-header {
+      //border: 1px solid brown;
+      width: 65vw;
+      height: auto;
+      font-size: 3.1vw;
+      font-weight: 500;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .buttons-wrapper {
+      //border: 1px solid brown;
+      width: 60vw;
+      justify-content: space-around;
+      font-size: 2vw;
+      font-weight: 600;
+
+      &__btn-learn {
+        flex-basis: 22vw;
+        font-size: 3vw;
+      }
+
+      &__btn-get {
+        flex-basis: 22vw;
+        font-size: 3vw;
+      }
+    }
   }
 }

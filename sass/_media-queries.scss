@@ -17,13 +17,15 @@
 
   .header {
     //border: 1px solid yellowgreen;
-    min-height: 15vh;
+    min-height: 16vh;
+    min-width: 85vw;
+    justify-content: space-between;
     &__logo {
       //border: 1px solid yellowgreen;
 
       &-img {
         //border: 1px solid red;
-        width: 50vw;
+        width: 36vw;
         height: auto;
       }
     }

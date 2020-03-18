@@ -1,15 +1,15 @@
 .header__hamburger {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 1vh;
+  right: 1vh;
   z-index: 2;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
 
 .toggler {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1vh;
+  right: 1vh;
   z-index: 3;
   cursor: pointer;
   width: 5rem;
@@ -19,8 +19,8 @@
 
 .hamburger {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1vh;
+  right: 1vh;
   z-index: 2;
   width: 6rem;
   height: 6rem;

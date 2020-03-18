@@ -1,25 +1,25 @@
 /* container for the text and phones imgs*/
 .content-view {
+  //border: 5px solid green;
   margin: 0 auto;
   min-height: 65vh;
   min-width: 70vw;
-  //border: 5px solid green;
   display: flex;
   justify-content: center;
 }
 
 .imgs-wrapper {
-  font-size: 0.5vw;
   //border: 1px solid red;
-  height: auto;
-  width: 25vw;
   position: relative;
+  font-size: 0.5vw;
+  width: 25vw;
+  height: auto;
 
   &__img-1 {
+    //border: black 1px solid;
     position: absolute;
     top: 1em;
-    left: 3vw;
-    //border: black 1px solid;
+    left: 3.2vw;
     z-index: 1;
     max-height: 59.2vh;
     max-width: 14.8vw;
@@ -30,7 +30,7 @@
   &__img-2 {
     position: absolute;
     top: 0;
-    right: 0em;
+    right: 0;
     z-index: auto;
     max-height: 59.2vh;
     max-width: 14.8vw;
@@ -41,10 +41,10 @@
 
 .text-wrapper {
   // border: 1px solid red;
-  padding: 3vw 0;
-  height: 50vh;
-  width: 23vw;
   display: flex;
+  flex-basis: 23vw;
+  height: 50vh;
+  padding: 3vw 0;
   flex-direction: column;
   justify-content: space-around;
   color: white;
@@ -58,33 +58,35 @@
   }
 
   &__sub-header {
+    //border: 1px solid brown;
     width: 22vw;
     height: auto;
-    //border: 1px solid brown;
-    line-height: 1.5;
     font-size: 0.75vw;
     font-weight: 500;
+    line-height: 1.5;
   }
 }
 
 .buttons-wrapper {
-  width: 19vw;
   //border: 1px solid brown;
   display: flex;
+  width: 19vw;
   justify-content: space-between;
-  font-weight: 600;
   font-size: 1vw;
+  font-weight: 600;
 
   &__btn-learn {
     display: flex;
+    flex-basis: 9vw;
+    height: 5vh;
     justify-content: center;
     align-items: center;
-    width: 9vw;
-    height: 5vh;
-    color: white;
     background-color: #4bbf58;
+    color: #fff;
     border-radius: 4px;
     cursor: pointer;
+    transition: all, 0.2s ease;
+
     &:hover {
       opacity: 0.8;
     }
@@ -94,12 +96,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 9vw;
+    flex-basis: 9vw;
     height: 5vh;
-    color: white;
     background-color: #3397db;
+    color: #fff;
     border-radius: 4px;
     cursor: pointer;
+    transition: all, 0.2s ease;
+
     &:hover {
       opacity: 0.8;
     }

@@ -9,50 +9,58 @@
 
   &__logo {
     //border: 1px solid yellowgreen;
-    height: auto;
-    width: 23vw;
     display: flex;
+    flex-basis: 23vw;
+    height: auto;
     align-items: center;
 
     &-img {
+      //border: 1px solid red;
       width: 10vw;
       height: auto;
     }
   }
 
   &__nav {
-    padding-left: 1vw;
     //border: 5px solid yellowgreen;
-    height: auto;
-    width: 25vw;
     display: flex;
+    flex-basis: 25vw;
+    height: auto;
+    padding-left: 1vw;
     align-items: center;
     justify-content: center;
 
     &-list {
-      cursor: pointer;
       //border: 1px solid red;
-      width: 25vw;
-      height: 5rem;
       display: flex;
+      height: 5rem;
+      flex-basis: 25vw;
       align-items: center;
       justify-content: space-between;
+      cursor: pointer;
     }
+
     &-item {
+      //border: 1px solid white;
       display: flex;
+      height: 2rem;
+      flex-basis: auto;
       justify-content: center;
       align-items: center;
-      font-size: 0.8vw;
-      //border: 1px solid white;
-      height: 2rem;
-      width: auto;
       list-style: none;
       text-transform: uppercase;
-      color: white;
+      font-size: 0.8vw;
       font-weight: 500;
+      color: #fff;
+      transition: all, 0.2s ease;
+
       &:hover {
         opacity: 0.8;
       }
     }
+  }
+
+  &__hamburger {
+    display: none;
   }
 }

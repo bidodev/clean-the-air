@@ -11,7 +11,8 @@
 
 
 ## Mobile Version
-![ ](https://media.giphy.com/media/keaU4erFrbicH2fz7K/giphy.gif  "Mobile Version")
+
+<img src="https://media.giphy.com/media/keaU4erFrbicH2fz7K/giphy.gif" align="center" />
 
 ### TODO
 

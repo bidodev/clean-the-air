@@ -7,7 +7,7 @@
 
 ### Previous Dekstop
 
-[![alt text](./img/final-desktop.png)](https://bidodev.github.io/responsive-site-design/)
+[![alt text](./img/final-desktop.png)](https://clean-air.bido.dev/)
 
 
 ## Mobile Version
